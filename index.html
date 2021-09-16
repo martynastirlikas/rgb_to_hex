@@ -1,0 +1,39 @@
+<html>
+	
+	<head>
+		
+		<title>Martynas Tirlikas </title>
+		<style> 
+			div {
+				margin-bottom: 15px;
+			}
+			label {
+				display: inline-block;
+				width: 10px;
+				text-align: right;
+			}
+		</style>
+	</head>
+		
+	<body>
+		 
+		<p> Enter RGB values between 0 and 255 </p>
+		<div>
+			<label>R: </label>
+			<input type="number" name = "array[]" value="" min="0" max="255"><br>
+		</div>
+		<div>
+			<label>G: </label>
+			<input type="number" name = "array[]" value="" min="0" max="255"><br>
+		</div>
+		<div>
+			<label>B: </label>
+			<input type="number" name = "array[]" value="" min="0" max="255"><br>
+		</div>
+		
+		<button type="button" name="button" onclick = convertToHex()>Convert</button>
+		<p>Hex representation: </p>
+		<p id="hex"></p>
+		<script src="index.js"></script>
+	</body>
+</html>
